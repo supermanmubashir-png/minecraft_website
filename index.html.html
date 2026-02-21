@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Ultimate Fan Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#87CEEB, #3b8526);
+            color: #222;
+            transition: 0.4s;
+        }
+
+        header {
+            background: #2d6a1f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        nav {
+            background: #1e4d15;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #3b8526;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #2d6a1f;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #3b8526;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1e4d15;
+        }
+
+        .dark-mode {
+            background: #111;
+            color: white;
+        }
+
+        .dark-mode .card {
+            background: #222;
+            color: white;
+        }
+
+        footer {
+            background: #1e4d15;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⛏️ Minecraft Ultimate World</h1>
+    <p>Build • Survive • Explore • Conquer</p>
+    <button class="btn" onclick="toggleMode()">🌙 Toggle Day/Night</button>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#mobs">Mobs</a>
+    <a href="#biomes">Biomes</a>
+    <a href="#dimensions">Dimensions</a>
+    <a href="#tips">Survival Tips</a>
+</nav>
+
+<section id="about">
+    <h2>About the Game</h2>
+    <p>Minecraft is a sandbox adventure game where players gather resources, craft tools, fight mobs, and build unlimited creations in a block-based universe.</p>
+</section>
+
+<section id="mobs">
+    <h2>Popular Mobs</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>💥 Creeper</h3>
+            <p>Explodes when close to the player.</p>
+        </div>
+        <div class="card">
+            <h3>💀 Skeleton</h3>
+            <p>Ranged attacker with a bow.</p>
+        </div>
+        <div class="card">
+            <h3>🐉 Ender Dragon</h3>
+            <p>The final boss of The End dimension.</p>
+        </div>
+        <div class="card">
+            <h3>🐮 Cow</h3>
+            <p>Provides leather and food.</p>
+        </div>
+    </div>
+</section>
+
+<section id="biomes">
+    <h2>Biomes</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🌲 Forest</h3>
+            <p>Great for wood and animals.</p>
+        </div>
+        <div class="card">
+            <h3>🏜️ Desert</h3>
+            <p>Contains temples and villages.</p>
+        </div>
+        <div class="card">
+            <h3>❄️ Snow Biome</h3>
+            <p>Cold region with snow and ice.</p>
+        </div>
+    </div>
+</section>
+
+<section id="dimensions">
+    <h2>Dimensions</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🌍 Overworld</h3>
+            <p>Main survival world.</p>
+        </div>
+        <div class="card">
+            <h3>🔥 Nether</h3>
+            <p>Dangerous lava dimension.</p>
+        </div>
+        <div class="card">
+            <h3>🌌 The End</h3>
+            <p>Final battle dimension.</p>
+        </div>
+    </div>
+</section>
+
+<section id="tips">
+    <h2>Survival Tips</h2>
+    <div class="grid">
+        <div class="card">
+            <p>✔ Build shelter before night.</p>
+        </div>
+        <div class="card">
+            <p>✔ Always carry food.</p>
+        </div>
+        <div class="card">
+            <p>✔ Never dig straight down.</p>
+        </div>
+        <div class="card">
+            <p>✔ Light up caves with torches.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Minecraft Ultimate Fan Website | Built with HTML, CSS & JavaScript</p>
+</footer>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>
